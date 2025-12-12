@@ -1,0 +1,190 @@
+/* ===== GENERELT ===== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #111827;
+  background-color: #f9fafb;
+}
+
+.site-header,
+main,
+.site-footer {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* ===== NAVBAR ===== */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.logo img {
+  height: 40px;
+  display: block;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #111827;
+  font-size: 0.95rem;
+}
+
+.nav-links a.active {
+  font-weight: 600;
+  color: #2563eb;
+}
+
+/* ===== HERO PÅ VISIT-SIDEN ===== */
+
+.page-hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1.5rem 0 2.5rem;
+}
+
+.page-hero-text {
+  flex: 1 1 260px;
+}
+
+.page-hero-text h1 {
+  font-size: 1.8rem;
+  margin: 0 0 0.5rem;
+}
+
+.page-hero-text p {
+  margin: 0;
+  max-width: 34rem;
+  font-size: 0.98rem;
+}
+
+.page-hero-image {
+  flex: 1 1 260px;
+}
+
+.page-hero-image img {
+  width: 100%;
+  max-width: 360px;
+  border-radius: 1rem;
+  display: block;
+}
+
+/* ===== SEKSJONER ===== */
+
+.visit-section {
+  padding: 0 0 2.5rem;
+}
+
+.visit-section h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+}
+
+/* To-kolonne layout, faller ned på små skjermer */
+.visit-layout-two {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.visit-block {
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  padding: 1.2rem 1.4rem;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.07);
+  flex: 1 1 260px;
+}
+
+.address {
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/* Bilder inne i blokker */
+
+.location-image img,
+.cafe-image img {
+  width: 100%;
+  margin-top: 0.75rem;
+  border-radius: 0.75rem;
+  display: block;
+}
+
+/* ===== ÅPNINGSTIDER ===== */
+
+.hours-card {
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.07);
+  padding: 1.2rem 1.4rem;
+  max-width: 480px;
+}
+
+.hours-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hours-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 0.95rem;
+}
+
+.hours-list li:last-child {
+  border-bottom: none;
+}
+
+.hours-list span:first-child {
+  font-weight: 500;
+}
+
+.closed {
+  color: #b91c1c;
+  font-weight: 500;
+}
+
+/* ===== BULLET-LISTE ===== */
+
+.bullet-list {
+  margin: 0.25rem 0 0;
+  padding-left: 1.2rem;
+  font-size: 0.95rem;
+}
+
+.bullet-list li {
+  margin-bottom: 0.3rem;
+}
+
+/* ===== FOOTER ===== */
+
+.site-footer {
+  border-top: 1px solid #e5e7eb;
+  padding: 1rem 0 2rem;
+  font-size: 0.85rem;
+  color: #6b7280;
+  text-align: center;
+}
+
